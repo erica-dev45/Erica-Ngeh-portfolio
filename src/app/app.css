@@ -1,0 +1,5 @@
+.app-main {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 96px var(--space-md) var(--space-xl);
+}
