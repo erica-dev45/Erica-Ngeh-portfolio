@@ -1,18 +1,38 @@
-<!-- projects.component.html --> 
-<section id="projets" class="projets"> 
-  <h2>Mes projets</h2> 
-  <div class="grille"> 
-    @for (p of projects; track p.title) { 
-      <article class="carte"> 
-        <img [src]="p.image" [alt]="p.title" /> 
-        <h3>{{ p.title }}</h3> 
-        <p>{{ p.description }}</p> 
-           <div class="tags"> 
-          @for (t of p.techs; track t) { <span>{{ t }}</span> } 
-        </div> 
-        <a [href]="p.demoUrl" target="_blank">Démo</a> 
-        <a [href]="p.githubUrl" target="_blank">Code</a> 
-      </article> 
-    } 
-  </div> 
-</section> 
+<section class="projects" id="work">
+  <h2 class="projects__heading">Selected Work</h2>
+
+  <div class="projects__grid">
+    @for (project of projects; track project.title) {
+      <article class="project-card">
+        <div class="project-card__image-placeholder"></div>
+
+        <div class="project-card__body">
+          <div class="project-card__top">
+            <h3 class="project-card__title">{{ project.title }}</h3>
+            <a
+              [href]="project.demoUrl"
+              target="_blank"
+              class="project-card__link-icon"
+              aria-label="Open live demo"
+            >
+              <span class="material-symbols-outlined">open_in_new</span>
+            </a>
+          </div>
+
+          <p class="project-card__description">{{ project.description }}</p>
+
+          <div class="project-card__chips">
+            @for (tech of project.techs; track tech) {
+              <span class="project-card__chip">{{ tech }}</span>
+            }
+          </div>
+
+          <div class="project-card__actions">
+            <a [href]="project.demoUrl" target="_blank" class="project-card__action-link">Demo</a>
+            <a [href]="project.githubUrl" target="_blank" class="project-card__action-link">Code</a>
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>

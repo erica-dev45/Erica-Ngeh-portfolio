@@ -1,5 +1,121 @@
-.grille { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
-  gap: 1.5rem; 
+
+.projects {
+  padding: var(--space-lg) 0;
+}
+
+.projects__heading {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+.project-card {
+  background: var(--color-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 20px var(--color-primary-glow);
+  border-color: rgba(255, 87, 34, 0.3);
+}
+
+.project-card__image-placeholder {
+  height: 192px;
+  /* Swap for <img [src]="project.image"> once you have real screenshots */
+  background: linear-gradient(135deg, #1e2333, #0d1420);
+}
+
+.project-card__body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.project-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-card__title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.project-card__link-icon {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.project-card__link-icon:hover {
+  color: var(--color-primary);
+}
+
+.project-card__description {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.project-card__chip {
+  background-color: #1e2333;
+  border: 1px solid rgba(255, 87, 34, 0.3);
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.project-card__actions {
+  display: flex;
+  gap: var(--space-md);
+  padding-top: var(--space-xs);
+}
+
+.project-card__action-link {
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-card__action-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
 }
