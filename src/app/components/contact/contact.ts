@@ -1,3 +1,4 @@
+import { CONTACT_LINKS, contactLink } from './../../data/contact-links';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })
-export class Contact {}
+export class Contact {
+  contactLinks = CONTACT_LINKS;
+}

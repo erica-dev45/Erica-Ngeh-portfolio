@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<section class="contact" id="contact">
+  <h2 class="contact__heading">Contact</h2>
+
+  <p class="contact__intro">
+    Have a project in mind, or just want to say hi? I'm one click away.
+  </p>
+
+  <div class="contact__links">
+    @for (link of contactLinks; track link.label) {
+      <a [href]="link.href" target="_blank" class="contact__link-card">
+        <span class="material-symbols-outlined">{{ link.icon }}</span>
+        <span>{{ link.label }}</span>
+      </a>
+    }
+  </div>
+</section>

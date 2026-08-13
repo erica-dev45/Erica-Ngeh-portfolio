@@ -1,11 +1,10 @@
-/* src/app/components/header/header.component.css */
 
 .header {
-  position: fixed;     /* stays pinned while the page scrolls */
+  position: fixed;     
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 50;          /* sits above all page content */
+  z-index: 50;          
   background: rgba(9, 10, 15, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -42,7 +41,7 @@
 }
 
 .header__nav {
-  display: none;   /* hidden on mobile — shown at desktop breakpoint below */
+  display: none;   
   gap: var(--space-md);
 }
 
@@ -84,7 +83,6 @@
   50%      { box-shadow: 0 0 30px rgba(255, 87, 34, 0.8); }
 }
 
-/* Desktop breakpoint — show the nav links */
 @media (min-width: 768px) {
   .header__nav {
     display: flex;
