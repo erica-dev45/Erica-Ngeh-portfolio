@@ -1,0 +1,18 @@
+<!-- projects.component.html --> 
+<section id="projets" class="projets"> 
+  <h2>Mes projets</h2> 
+  <div class="grille"> 
+    @for (p of projects; track p.title) { 
+      <article class="carte"> 
+        <img [src]="p.image" [alt]="p.title" /> 
+        <h3>{{ p.title }}</h3> 
+        <p>{{ p.description }}</p> 
+           <div class="tags"> 
+          @for (t of p.techs; track t) { <span>{{ t }}</span> } 
+        </div> 
+        <a [href]="p.demoUrl" target="_blank">Démo</a> 
+        <a [href]="p.githubUrl" target="_blank">Code</a> 
+      </article> 
+    } 
+  </div> 
+</section> 
