@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })
-export class Hero {}
+export class Hero {
+    githubUrl = 'https://github.com/erica-dev45';
+
+}

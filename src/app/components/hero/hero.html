@@ -1,1 +1,30 @@
-<p>hero works!</p>
+<section class="hero">
+  <div class="hero__text">
+    <h1 class="hero__title">
+      I Design, Code &<br />
+      <span class="hero__title-accent">Build Solutions</span>
+    </h1>
+
+    <p class="hero__subtitle">
+      Front-End Angular Developer crafting high-performance, scalable web
+      applications with structural precision and engaging user experiences.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#work" class="hero__btn-ghost">
+        View My Work
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+
+      <a [href]="githubUrl" target="_blank" class="hero__icon-btn" aria-label="GitHub">
+        <span class="material-symbols-outlined">code</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__image-wrap">
+    <div class="hero__image-circle">
+      <div class="hero__image-placeholder"></div>
+    </div>
+  </div>
+</section>

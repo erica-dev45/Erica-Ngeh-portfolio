@@ -1,3 +1,4 @@
+import { SKILL_CATEGORIES, skillCategory } from './../../data/skills';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
-export class Skills {}
+export class Skills {
+  skillCategories =SKILL_CATEGORIES
+}

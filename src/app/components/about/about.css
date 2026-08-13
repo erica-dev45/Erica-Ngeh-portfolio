@@ -1,0 +1,28 @@
+/* src/app/components/about/about.component.css */
+
+.about {
+  padding: var(--space-lg) 0;
+}
+
+.about__heading {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.about__content {
+  max-width: 720px; 
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
