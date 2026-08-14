@@ -1,0 +1,12 @@
+<section class="stats">
+  <div class="stats__grid">
+    @for (stat of stats; track stat.label; let i = $index) {
+      <div class="stats__card">
+        <div class="stats__number">
+          {{ displayValues()[i] }}{{ stat.suffix }}
+        </div>
+        <div class="stats__label">{{ stat.label }}</div>
+      </div>
+    }
+  </div>
+</section>

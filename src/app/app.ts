@@ -7,10 +7,11 @@ import { About } from "./components/about/about";
 import { Skills } from "./components/skills/skills";
 import { Projects } from './components/projects/projects';
 import { Contact } from "./components/contact/contact";
+import { ScrollRevealDirective } from './directives/scroll-reveal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Hero, About, Skills, Projects, Contact],
+  imports: [RouterOutlet, Header, Footer, Hero, About, Skills, Projects, Contact, ScrollRevealDirective],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

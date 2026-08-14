@@ -12,6 +12,17 @@ background: var(--brand);
 color: #ffffff; 
 } 
 
+/* Scroll reveal animation — used by appScrollReveal directive */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.95);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 
 /* src/styles.css — global tokens, shared by every component */
 

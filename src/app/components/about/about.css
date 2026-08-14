@@ -1,5 +1,8 @@
-/* src/app/components/about/about.component.css */
-
+/* Add this at the top of each file — makes the host element behave
+   as a normal block box, so opacity/transform animate correctly */
+:host {
+  display: block;
+}
 .about {
   padding: var(--space-lg) 0;
 }
