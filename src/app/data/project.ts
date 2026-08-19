@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     description:
       'Front-end Web-App for universities. Universities use it to manage announcements , and notes published for students to use without needing internet connection.',
     techs: ['Angular', 'TypeScript', 'CSS', 'Angular Service Worker'],
-    demoUrl: 'https://your-deals-africa-demo.vercel.app',
-    githubUrl: 'https://github.com/erica-dev45/deals-africa',
+    demoUrl: 'https://free-bosh.vercel.app',
+    githubUrl: 'https://github.com/MrAbkr19/freeBosh',
     image: 'freeBosh.png'},
 ];
