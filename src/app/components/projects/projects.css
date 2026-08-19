@@ -38,10 +38,23 @@
   border-color: rgba(255, 87, 34, 0.3);
 }
 
-.project-card__image-placeholder {
+
+
+.project-card__image-link {
+  display: block;
   height: 192px;
-  /* Swap for <img [src]="project.image"> once you have real screenshots */
-  background: linear-gradient(135deg, #1e2333, #0d1420);
+  overflow: hidden;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+  transition: transform 0.5s ease;
+}
+
+.project-card__image-link:hover .project-card__image {
+  transform: scale(1.05);  
 }
 
 .project-card__body {

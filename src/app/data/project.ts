@@ -9,30 +9,30 @@ export interface Project {
   
 export const PROJECTS: Project[] = [
   {
-    title: 'Deals Africa',
+    title: 'Calao Dore',
     description:
-      'Front-end promotions and deals platform for the Cameroonian market, built with Angular signals and mock data.',
+      'Angular restaurant site with routing, deployed on Vercel as an academic assignment.',
     techs: ['Angular', 'TypeScript', 'CSS'],
-    demoUrl: 'https://your-deals-africa-demo.vercel.app',
-    githubUrl: 'https://github.com/erica-dev45/deals-africa',
-    image: 'a sec'
+    demoUrl: 'https://le-calao-dore-delta.vercel.app',
+    githubUrl: 'https://github.com/erica-dev45/le-calao-dore',
+    image: 'calao-dore.png'
   },
   {
-    title: 'Deals Africa',
+    title: 'Shop App',
     description:
-      'Front-end promotions and deals platform for the Cameroonian market, built with Angular signals and mock data.',
+      'Front-end e-commerce shop that shows a popup during a click and displays the images-built with Angular signals and mock data.',
     techs: ['Angular', 'TypeScript', 'CSS'],
-    demoUrl: 'https://your-deals-africa-demo.vercel.app',
-    githubUrl: 'https://github.com/erica-dev45/deals-africa',
-    image: 'a sec'
+    demoUrl: 'https://shop-app-one-steel.vercel.app',
+    githubUrl: 'https://github.com/erica-dev45/shop-app',
+    image: 'shop-app.png'
   },
 
   {
-   title: 'Deals Africa',
+   title: 'FreeBosh',
     description:
-      'Front-end promotions and deals platform for the Cameroonian market, built with Angular signals and mock data.',
-    techs: ['Angular', 'TypeScript', 'CSS'],
+      'Front-end Web-App for universities. Universities use it to manage announcements , and notes published for students to use without needing internet connection.',
+    techs: ['Angular', 'TypeScript', 'CSS', 'Angular Service Worker'],
     demoUrl: 'https://your-deals-africa-demo.vercel.app',
     githubUrl: 'https://github.com/erica-dev45/deals-africa',
-    image: 'a sec'},
+    image: 'freeBosh.png'},
 ];

@@ -4,12 +4,19 @@
   <div class="projects__grid">
     @for (project of projects; track project.title) {
       <article class="project-card">
-        <div class="project-card__image-placeholder"></div>
+         <a [href]="project.demoUrl" target="_blank" class="project-card__image-link">
+          <img
+            [src]="project.image"
+            [alt]="'Capture d\'écran du projet ' + project.title"
+            class="project-card__image"
+          />
+        </a>
 
         <div class="project-card__body">
           <div class="project-card__top">
             <h3 class="project-card__title">{{ project.title }}</h3>
             <a
+
               [href]="project.demoUrl"
               target="_blank"
               class="project-card__link-icon"

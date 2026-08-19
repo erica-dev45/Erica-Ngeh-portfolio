@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // src/app/directives/scroll-reveal.directive.ts
+=======
+>>>>>>> be27b8b (feat(portfolio): set up project structure and core pages)
 import { Directive, ElementRef, AfterViewInit, OnDestroy, inject, Renderer2 } from '@angular/core';
 
 @Directive({
